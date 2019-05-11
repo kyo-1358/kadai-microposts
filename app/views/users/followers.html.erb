@@ -23,7 +23,7 @@
 " class="nav-link 
 <%= 'active' if current_page?(user_path(@user)) %>
 ">Microposts  <span class="badge badge-secondary">
-  <%= @count_microposts %>
+<%= @count_microposts %>
 </span></a></li>
       <li class="nav-item"><a href="
 <%= followings_user_path(@user) %>
@@ -32,7 +32,6 @@
 ">Followings  <span class="badge badge-secondary">
 <%= @count_followings %>
 </span></a></li>
-
       <li class="nav-item"><a href="
 <%= followers_user_path(@user) %>
 " class="nav-link 
@@ -42,7 +41,7 @@
 </span></a></li>
     </ul>
     
-<%= render 'microposts/microposts', microposts: @microposts %>
+<%= render 'users', users: @followers %>
 
   </div>
 </div>
