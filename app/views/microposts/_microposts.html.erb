@@ -20,10 +20,9 @@
 </p>
         </div>
         <div>
-    
+    <%= render 'favorites/favorite_button', micropost: micropost %> 
     <% if current_user == micropost.user %>
 
-            
 <%= link_to "Delete", micropost, method: :delete, data: { confirm: "削除しますか？" }, class: 'btn btn-danger btn-sm' %>
     
   
